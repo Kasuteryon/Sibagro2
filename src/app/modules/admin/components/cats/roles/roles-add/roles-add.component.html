@@ -1,0 +1,35 @@
+<div class="main-container">
+
+    <div class="appointment-container animated fadeIn">
+        <div class="Wrapper shadow-lg">
+            <div class="title">
+                <label class="h4">Añadir Rol</label>
+            </div>
+            <form [formGroup]="form">
+                <div class="form">
+
+                    <div class="input_field">
+                        <label>Código de Rol</label>
+                        <input type="text" class="input" required formControlName="Role_Id">
+                    </div>
+    
+                    <div class="input_field">
+                        <label>Nombre</label>
+                        <input type="text" class="input" required formControlName="Role_Name">
+                    </div>
+    
+                    <div class="input_field">
+                        <label>Descripción</label>
+                        <input type="text" class="input" required formControlName="Role_Description">
+                    </div>
+    
+                    <div class="mt-4">
+                        <button (click)="submit()" class="btn btn-primary">Guardar</button>
+                    </div>
+    
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

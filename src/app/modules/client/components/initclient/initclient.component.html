@@ -1,0 +1,76 @@
+<div class="grid-container fadeIn animated">
+  <section class="info-header"><span class="material-icons">
+    account_circle
+    </span> <h1> Bienvenido, @user.name </h1></section>
+<section class="info-nexto-header"><h3>Gestiona tu información, la privacidad y la seguridad para mejorar tu experiencia en Sibagro. <a href="#">Más Información</a></h3></section>
+<div></div>
+<section class="container-infocards">
+
+  <mat-grid-list cols="2" rowHeight="350px">
+
+    <!-- Card containers -->
+
+    <!-- card-Privacidad y personalización -->
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+           <h2> Privacidad y personalización </h2>
+            <button  mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+
+          <!-- Container-text for privacity card -->
+          <div class="container-priv-per shadow-lg" ><h3 class="t-c-c"> Consulta los datos almacenados en tu cuenta de Sibagro y elige qué actividad se debe de guardar para personalizar tu experiencia en Sibagro.</h3></div>
+          
+          <div class="button-managent">
+            <button class="btn-info" mat-raised-button color="primary">Gestiona tus datos y privacidad</button>
+          </div>
+          
+        </mat-card-content>
+        
+      </mat-card>
+    </mat-grid-tile>
+    <!-- Fin card-Privacidad y personalización -->
+
+    
+    <!-- card-Gestión De Cuenta -->
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+           <h2>Gestión De Cuenta</h2> 
+            <button  mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+           <!-- Container-text for Account Management card -->
+          <div class="container-priv-per shadow-lg"> <h3 class="t-c-c">Gestiona tu actividad y visualiza recomendación de acción ante exposición de información relevante y acceso a terceros.</h3></div>
+          
+          <div class="button-managent" >
+            <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+          </div>
+          
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+     <!-- Fin card-Privacidad y personalización -->
+
+  </mat-grid-list>
+
+</section>
+  
+</div>

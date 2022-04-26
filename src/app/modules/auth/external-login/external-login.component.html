@@ -1,0 +1,40 @@
+<div class="container shadow-lg">
+    <div class="row">
+
+        <mat-card class="login-form bg-light mt-4 p-4"> 
+            <mat-card-title>Inicio de Sesión</mat-card-title>
+        
+            <mat-card-content>
+                <form [formGroup]="form">
+                    <mat-card class="mat-card-warning animate__animated animate__headShake" *ngIf="validFlag==false">
+                        <mat-label>Credenciales incorrectas</mat-label>
+                    </mat-card>
+                    <p>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Escribe tu Correo</mat-label>
+                            <input matInput formControlName="username">
+                            
+                        </mat-form-field>
+                    </p>
+        
+                    <p>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Escribe tu Contraseña</mat-label>
+                            <input type="password" matInput formControlName="password">
+                            
+                          </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-label>¿No tienes cuenta? <a [routerLink]="['/auth', 'register']">Regístrate</a></mat-label>
+                    </p>
+                </form>
+            </mat-card-content>
+        
+            <mat-card-actions>
+                <button class="btn btn-primary float-end" (click)="submit()" [routerLink]="'/categories'" > 
+                    Iniciar Sesión
+                </button>
+            </mat-card-actions>
+        </mat-card> 
+    </div>
+</div>

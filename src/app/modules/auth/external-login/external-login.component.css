@@ -1,0 +1,39 @@
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #39642E !important;
+}
+:host{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.mat-form-field{
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mat-success {
+    background-color: green;
+    color: #fff;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    padding: 0;
+  }
+
+  

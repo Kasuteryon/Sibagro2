@@ -1,0 +1,174 @@
+<div class="grid-container animated fadeIn">
+    <h1 class="mat-h1">Bienvenido a Sibagro</h1>
+    
+
+    <mat-grid-list [cols]="mybreakpoint" rowHeight="300px" (window:resize)="handleSize($event)">
+
+        <mat-grid-tile>  
+            <mat-card class="dashboard-card shadow-lg">
+              <img mat-card-image class="img" src="./../../../../../../assets/img/roles.svg" alt="Photo of a Shiba Inu">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>Roles <i class="uil uil-bag"></i></mat-card-title>                 
+                </mat-card-header>
+                <mat-card-actions>
+                  <a [routerLink]="['/admin', 'roles']" mat-button class="btn btn-success">Ir</a>
+                </mat-card-actions>
+              </mat-card>
+          </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/regions.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Regiones <i class="uil uil-globe"></i></mat-card-title>
+            </mat-card-header>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'regions']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/country.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Paises <i class="uil uil-map-marker"></i> </mat-card-title>
+            </mat-card-header>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'countries']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/div.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>División Adm. <i class="uil uil-map"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'divisions']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/phones.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Teléfonos <i class="uil uil-phone"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'phones']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/request.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Tipo de Solicitudes <i class="uil uil-right-indent-alt"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'request-type']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/id-type.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Tipo Identificaciones <i class="uil uil-book-open"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'identif-types']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/id.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Identificaciones <i class="uil uil-book-reader"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'identif']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/status.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Estados <i class="uil uil-spinner-alt"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'states']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+      
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/cow.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Ganado <i class="uil uil-bug"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'cattle']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/grains.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Granos <i class="uil uil-elipsis-double-v-alt"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'grains']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>  
+        <mat-card class="dashboard-card shadow-lg">
+          <img mat-card-image class="img" src="./../../../../../../assets/img/machines.svg" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Maquinaria <i class="uil uil-jackhammer"></i></mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'machines']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </div>
+  

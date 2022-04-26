@@ -1,0 +1,31 @@
+<div class="main-container">
+
+    <div class="appointment-container animated fadeIn">
+        <div class="Wrapper shadow-lg">
+            <div class="title">
+                <label class="h4">Añadir Región</label>
+            </div>
+            
+
+            <form [formGroup]="form">
+                <div class="form">
+
+                    <div class="input_field">
+                        <label>Código de Región</label>
+                        <input type="text" class="input" required formControlName="Region_Code">
+                    </div>
+    
+                    <div class="input_field">
+                        <label>Región</label>
+                        <input type="text" class="input" required formControlName="Region_Name">
+                    </div>
+    
+                    <div class="mt-4">
+                        <button (click)="submit()" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

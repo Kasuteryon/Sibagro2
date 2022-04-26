@@ -1,0 +1,170 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.mid-container{
+  margin-top: 50px;
+  /* background-color: gold; */
+
+}
+.mat-grid-tile{
+  margin-top: 50px;
+  /* background-color: aqua; */
+}
+.dashboard-card-content {
+  margin-top: -20cm !important;
+  /* background-color:rgb(205, 255, 25) !important;  */
+  text-align: center;
+}
+
+.grid-container {
+  /* background-color: aqua; */
+  margin: 20px;
+}
+
+
+.dashboard-card {
+  margin-top: 0.1cm;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  /* background-color:blue; */
+  text-align: center;
+  margin-top: 1cm !important;
+}
+.info-header{
+  
+  border-radius: 0.5em;
+  text-align: center;
+  border-radius: 1em;
+  margin: auto;
+  padding: auto;
+  height: 2cm;
+  width: 20cm;
+}
+.info-nexto-header{
+text-align: center;
+margin-bottom: 30px;
+}
+.dash-container{
+  /* background-color: rebeccapurple; */
+  margin: 1cm;
+  text-align: left;
+  height: 2cm;
+}
+.dash-container-h{
+  /* background-color: royalblue;  */
+  margin: 1cm;
+  text-align: left;
+  height: 5cm;
+}
+.dash-container-d-1{
+  /* background-color: aquamarine; */
+}
+
+.dash-container-1{
+  margin-top: -0.4cm;
+   /* background-color: aquamarine;   */
+}
+#t3{
+  margin-left: 0.2cm;
+}
+#dash-h3{
+  margin-right: 0.1cm;
+  margin-left: 0.5cm !important;
+}
+.custom-height{
+  margin-top: 0.1cm !important;
+}
+.container-priv-per{
+  /* background-color: aqua; */
+  margin-top: 20px !important;
+  display: inline-flex;
+  margin-left:auto;
+  margin-right:auto;
+  width: 700px;
+  height: 200px;
+}
+.button-managent{
+  margin: -70px 0px 0px -10px !important;
+  height: 50px;
+}
+.btn-priv{
+  text-align: center;
+  height: 50px;
+  width: 400px;
+
+}
+.btn-info{
+  float: right;
+  height: 40px;
+  width: 100px;
+  margin: -60px 80px 0px -50px !important;
+  
+  margin-left: -5cm !important;
+}
+#klbtn{
+  float: right;
+  height: 40px;
+  width: 100px;
+  margin: -10px 300px 0px -50px !important;
+  
+  margin-left: -5cm !important;
+}
+
+
+.mid-container{
+  margin-top: 0.3cm !important;
+  border-radius: 0.5em;
+  margin: auto;
+  padding: auto;
+  height: 2cm;
+  width: 20cm;
+}
+.dash-containerj{
+   /* background-color: red;  */
+  height: 6cm;
+  width: 12cm;
+  margin-left: 1cm;
+}
+.art1-h2{
+  margin-top: 0.6cm;
+  text-align: center;
+  margin-left: 0.5cm;
+}
+.art2{
+
+ margin-bottom: 5cm !important;
+}
+.art2-p{
+  text-align: center;
+  margin-right: 0.5cm;
+  margin-left: 0.5cm;
+}
+.g{
+  float: right;
+}

@@ -1,0 +1,65 @@
+<section class="container-infocards fadeIn animated" >
+
+  <section class="container">
+
+    <article class="art1">
+      <h2 class="art1-h2">Seguridad</h2>
+    </article>
+
+    <article class="art2">
+      <h3 class="art2-p">Opciones y recomendaciones que te ayudan a proteger tu cuenta</h3>
+    </article>
+
+  </section>
+
+  <mat-grid-list cols="2" rowHeight="450px" class="mcontain">
+
+    <!-- Card containers -->
+
+    <!-- card-Privacidad y personalización -->
+    <div class="row">
+      <mat-card class="dashboard-card custom-height">
+        <mat-card-header>
+          <mat-card-title class="h">
+            <h2>  </h2>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+       
+          <mat-card-content class="dashboard-card-content">
+            <!-- Container-text for privacity card -->
+            <div class="card">
+              <h2 id="t3">Metodos de pago</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">Con Sibagro puedes guardar datos de pago en un hambiente seguro</h3>
+                <button  mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+            <div class="card">
+              <h2 id="t3">Compras</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">Tus compras incluidas en envios y otros pedidos online </h3>
+                <button  mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+            <div class="card">
+              <h2 id="t3">Experiencia</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">Consulta tus transacciones y tu actividad en Sibagro</h3>
+                <button  mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+          </mat-card-content>
+        
+      </mat-card>
+    </div>
+
+  </mat-grid-list>
+
+</section>

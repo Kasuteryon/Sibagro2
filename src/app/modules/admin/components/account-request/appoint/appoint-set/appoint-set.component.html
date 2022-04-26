@@ -1,0 +1,31 @@
+<div class="main-container">
+    <div class="appointment-container animated fadeIn">
+        <div class="Wrapper shadow-lg">
+            <div class="title">
+                <label class="h4">Programar Cita</label>
+            </div>
+            <div class="form">
+
+                <div class="input_field">
+                    <label>Fecha</label>
+                    <input type="date" class="input" min="1930-01-01" max="2001-01-01" required>
+                </div>
+
+                <div class="input_field">
+                    <label>Hora</label>
+                    <input type="time" class="input" required>
+                </div>
+
+                <div class="input_field">
+                    <label>Observaciones</label>
+                    <input type="text" class="input" required style="height: 100px;">
+                </div>
+
+                <div class="mt-5">
+                    <button [routerLink]="['/admin', 'account-request-all']" class="btn btn-success">Citar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

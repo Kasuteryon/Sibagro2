@@ -1,0 +1,261 @@
+<mat-card class="container">
+    <mat-card-content>
+        <mat-vertical-stepper>
+
+            <mat-step label="Nacionalidad" completed="false">
+                <div>
+        
+                    <div class="Wrapper shadow-lg">
+                        <div class="title">
+                            <label class="h4">Selecciona tu país de procedencia</label>
+                        </div>
+        
+                        <div class="form center-form">
+                            <form [formGroup]="selection">
+                                <mat-form-field appearance="fill">
+                                    <mat-label class="ml-5">País...</mat-label>
+                                    <mat-select formControlName="picked">
+                                        <mat-option [value]="1">
+                                            Nicaragua
+                                        </mat-option>
+                                        <mat-option [value]="2">
+                                            Costa Rica
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </form>
+                            <div class="btn-pais"><button mat-button matStepperNext
+                                    class="btn btn-primary mt-4">Continuar</button></div>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </mat-step>
+        
+            <mat-step label="¿Quien eres?" completed="false">
+                <div>
+        
+                    <div class="Wrapper shadow-lg">
+                        <div class="title">
+                            <label class="h4">Selecciona la opción que mas se acople a tus nescesidades</label>
+                        </div>
+                        <div class="form center-form">
+                            <form [formGroup]="selection">
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Tu eres...</mat-label>
+                                    <mat-select formControlName="picked">
+                                        <mat-option [value]="1">
+                                            Persona Natural
+                                        </mat-option>
+                                        <mat-option [value]="2">
+                                            Persona Jurídica
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </form>
+                            <div class="btn-center mt-4">
+                                <div class="btn1-center">
+                                    <button mat-button matStepperPrevious class="btn btn-primary">Atras</button>
+                                </div>
+                                <div class="btn2-center">
+                                    <button mat-button matStepperNext class="btn btn-primary">Continuar</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+        
+                </div>
+        
+            </mat-step>
+        
+            <mat-step label="Formulario" completed="false">
+        
+                <div class="Wrapper shadow-lg" *ngIf="selected() === 2">
+                    <div class="title">
+                        <label class="h4">Formulario De Registro Persona Legal</label>
+                    </div>
+                    <div class="form">
+                        <div class="input_field">
+                            <label for="ids" class="label">
+                                <span>Tipo De Indentificación</span>
+                            </label>
+                            <input list="ids" class="input">
+                            <datalist id="ids">
+                                <option>RUC</option>
+                            </datalist>
+                        </div>
+        
+                        <div class="input_field">
+                            <label for="NDoc" class="label">
+                                <span>Nº Único de Indentificación</span>
+                            </label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Nombre Del Negocio</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Nombre Corto del Negocio</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Razón Social</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Descripción Del Negocio</label>
+                            <input type="text" class="input" required style="height: 80px;">
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Fecha De Fundación</label>
+                            <input type="date" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Teléfono</label>
+                            <input type="tel" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Ciudad</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Código Postal</label>
+                            <input class="input" type="text" inputmode="numeric"
+                                pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Dirección</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="btn-center mt-4">
+                            <button mat-button matStepperPrevious class="btn btn-primary btn1-center">Atrás</button>
+                            <button mat-button matStepperNext class="btn btn-primary btn2-center">Siguiente</button>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <!-- NATURAL -->
+                <div class="Wrapper shadow-lg" *ngIf="selected() === 1">
+                    <div class="title">
+                        <label class="h4">Formulario De Registro Persona Natural</label>
+                    </div>
+                    <div class="form">
+                        <div class="input_field">
+                            <label for="ids" class="label">
+                                <span>Tipo De Indentificación</span>
+                            </label>
+                            <input list="ids" class="input">
+                            <datalist id="ids">
+                                <option value="Cedula">Cedula</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                            </datalist>
+                        </div>
+        
+                        <div class="input_field">
+                            <label for="NDoc" class="label">
+                                <span>Nº Único de Indentificación</span>
+                            </label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Nombres</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Apellidos</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label for="gender" class="label">
+                                <span>Género</span>
+                            </label>
+                            <input list="gender" class="input">
+                            <datalist id="gender">
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </datalist>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Fecha De Nacimiento</label>
+                            <input type="date" class="input" min="1930-01-01" max="2001-01-01" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Teléfono</label>
+                            <input type="tel" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Ciudad</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Código Postal</label>
+                            <input class="input" type="text" inputmode="numeric"
+                                pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+                        </div>
+        
+                        <div class="input_field">
+                            <label>Dirección</label>
+                            <input type="text" class="input" required>
+                        </div>
+        
+                        <div class="btn-center mt-4">
+                            <button mat-button matStepperPrevious class="btn btn-primary btn1-center">Atrás</button>
+                            <button mat-button matStepperNext class="btn btn-primary btn2-center">Siguiente</button>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </mat-step>
+        
+            <mat-step label="Completar" completed="false">
+                <div>
+        
+                    <div class="Wrapper shadow-lg">
+                        <div class="title">
+                            <label class="h4">Para finalizar cuentanos</label>
+                            <label class="h4">¿Porqué deseas registrate en SIBAGRO?</label>
+                        </div>
+                        <div class="form center-form">
+        
+                            <div class="input_field">
+                                <input type="text" class="input shadow-lg" required style="height: 100px; width: auto;">
+                            </div>
+                            <div class="btn-center mt-4">
+                                <button mat-button matStepperPrevious class="btn btn-primary btn1-center">Atrás</button>
+                                <button mat-button matStepperNext class="btn btn-primary btn2-center">Enviar</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </mat-step>
+        
+        </mat-vertical-stepper>
+    </mat-card-content>
+</mat-card>

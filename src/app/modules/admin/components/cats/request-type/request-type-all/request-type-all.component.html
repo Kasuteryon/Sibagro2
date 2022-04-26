@@ -1,0 +1,47 @@
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 full-screen animated fadeIn">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Catálogo de Tipos de Solicitud</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+
+        <div class="btn-group me-2">
+          <a [routerLink]="['/admin', 'request-type-add']" class="btn btn-sm btn-outline-secondary">Añadir</a>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Exportar</button>
+        </div>
+
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          Más Recientes
+        </button>
+
+      </div>
+    </div>
+
+
+    <h2>Lista:</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Código de Solicitud</th>
+            <th scope="col">Nombre de Solicitud</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>-------</td>
+            <td>-------</td>
+            <td>-------</td>
+            <td>-------</td>
+            <td>
+              <a [routerLink]="['/admin', 'request-type-edit']">
+                <td>Editar</td>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+

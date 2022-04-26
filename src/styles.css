@@ -1,0 +1,54 @@
+/* Estilo Globales */
+
+@font-face {
+  font-family: epilogue;
+  src: url(assets/fonts/epilogue/Epilogue-Regular.ttf) format("opentype");
+}
+/* Hace que el footer se mantega en la parte de abajo */
+footer {
+    bottom: 0px;
+    width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'epilogue', sans-serif;
+}
+/* Animacion para que las transiciones de la pagina no se miren rusticas */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+body {
+  background-image: url(./assets/img/Moon.svg) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+} 

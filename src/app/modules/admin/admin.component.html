@@ -1,0 +1,41 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false"
+        class="gray"
+        >
+      <mat-toolbar class="black white">SIBAGRO</mat-toolbar>
+      <mat-nav-list>
+        <a class="white" mat-list-item routerLink="admin-home">Inicio</a>
+        <a class="white" mat-list-item routerLink="account-request-menu" *ngIf="role != 'S-ADM'"> Solicitud de Cuentas</a>
+        <a class="white" mat-list-item routerLink="auction-request-menu" *ngIf="role != 'S-ADM'"> Solicitud de Subastas</a>
+        <a class="white" mat-list-item routerLink="trading-request-menu"*ngIf="role != 'S-ADM'" > Solicitud de Ventas</a>
+        <a class="white" mat-list-item routerLink="users" *ngIf="role == 'S-ADM'">Gestionar Usuarios</a>
+        <a class="white" mat-list-item routerLink="users" *ngIf="role == 'S-ADM'">Gestionar Catálogos</a>
+        <a class="white" mat-list-item routerLink="users" *ngIf="role == 'S-ADM'">Control de Acceso</a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+      <mat-toolbar class="black">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon" style="color: white;">menu</mat-icon>
+        </button>
+        <span class="toolbar-space"></span>
+        <a class="btn btn-success" [routerLink]="['/auth', 'access']"><mat-icon>exit_to_app</mat-icon></a>
+      </mat-toolbar>
+
+      <!-- Add Content Here -->
+      <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+

@@ -1,0 +1,182 @@
+<div class="grid-container animated fadeIn">
+    <h1 class="mat-h1">Bienvenido a Sibagro</h1>
+    
+    <mat-grid-list [cols]="mybreakpoint" rowHeight="500px" (window:resize)="handleSize($event)">
+      <mat-grid-tile *ngIf="role != 'S-ADM'">
+        
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>DashBoard</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'dash']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+
+      
+      <mat-grid-tile >
+        
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Solicitud Cuentas</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'account-request-menu']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+
+      <mat-grid-tile  *ngIf="role != 'S-ADM'">
+        
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Solicitud Subasta</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'auction-request-menu']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+
+      <mat-grid-tile  *ngIf="role != 'S-ADM'">
+        
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Solicitud Venta</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'trading-request-menu']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Gestión Catálogos</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'catalogs-menu']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Control Acceso</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a [routerLink]="['/admin', 'catalogs-menu']" mat-button class="btn btn-success">Ir</a>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+
+      <mat-grid-tile *ngIf="role != 'S-ADM'">
+    
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Empleados</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="btn btn-success">Ir</button>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+      <mat-grid-tile *ngIf="role != 'S-ADM'">
+    
+        <mat-card class="dashboard-card shadow-lg">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Contratos</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://www.cyberclick.es/hs-fs/hubfs/blog/Dashboard-de-Metricfy.jpg?width=900&name=Dashboard-de-Metricfy.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                En este modulo usted podrá ver estadísticas de las transacciones de Bolnagro a través de SIBAGRO.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="btn btn-success">Ir</button>
+            </mat-card-actions>
+          </mat-card>
+
+          
+          
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  

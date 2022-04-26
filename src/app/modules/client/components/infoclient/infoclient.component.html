@@ -1,0 +1,132 @@
+<div class="grid-container fadeIn animated">
+  <section class="info-header ">
+    <h1> Información Personal </h1>
+    <h3>Información sobre ti y tus preferencias en los servicios de Sibagro. </h3>
+  </section>
+
+  <div></div>
+  
+  <section class="container-infocards">
+
+    <section class="mid-container shadow-lg">
+
+      <article class="art1">
+        <h2 class="art1-h2">Información de tu perfil en los servicios de Sibagro</h2>
+      </article>
+
+      <article class="art2">
+        <h3 class="art2-p">Información personal y opciones para gestionarla. Puedes hacer que parte de esta información,
+          como tus detalles de contacto, esté visible para otros usuarios. De este modo, les resultará más fácil ponerse
+          en contacto contigo.</h3>
+      </article>
+
+    </section>
+
+    <mat-grid-list cols="2" rowHeight="600px">
+
+      <!-- Card containers -->
+
+      <!-- card-Privacidad y personalización -->
+      <mat-grid-tile>
+        <mat-card class="dashboard-card custom-height">
+          <mat-card-header>
+            <mat-card-title class="h">
+              <h2> Información Básica </h2>
+              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu" xPosition="before">
+                <button mat-menu-item>Expand</button>
+                <button mat-menu-item>Remove</button>
+              </mat-menu>
+            </mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="dashboard-card-content">
+
+            <!-- Container-text for privacity card -->
+            <div class="dash-container shadow-lg">
+              <h2 id="t3">Foto</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">Puedes personalizar tu cuenta con una foto.</h3>
+                <button class="btn-info" mat-raised-button color="primary">cambiar</button>
+              </div>
+            </div>
+
+            <div class="dash-container shadow-lg">
+              <h2 id="t3">Nombre</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">@user.name.</h3>
+                <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+
+            <div class="dash-container shadow-lg">
+              <h2 id="t3">Fecha de nacimiento</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">@Fecha.nacimiento.</h3>
+                <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+
+            <div class="dash-container shadow-lg">
+              <h2 id="t3">Genero</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">@Genero.</h3>
+                <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+
+          </mat-card-content>
+
+        </mat-card>
+
+      </mat-grid-tile>
+      <!-- Fin card-Privacidad y personalización -->
+
+
+      <!-- card-Gestión De Cuenta -->
+      <mat-grid-tile rowHeight="400px">
+        <mat-card class="dashboard-card custom-height">
+          <mat-card-header>
+            <mat-card-title>
+              <h2>Información Contacto</h2>
+              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu" xPosition="before">
+                <button mat-menu-item>Expand</button>
+                <button mat-menu-item>Remove</button>
+              </mat-menu>
+            </mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="dashboard-card-content">
+
+            <!-- Container-text for privacity card -->
+            <div class="dash-container shadow-lg">
+              <h2 id="t3">Correo Electronico</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">@user.email</h3>
+                <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+
+            <div class="dash-container shadow-lg">
+              <h2 id="t3">Telefono</h2>
+              <div class="dash-container-1">
+                <h3 id="dash-h3">@user.number</h3>
+                <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+              </div>
+            </div>
+
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <!-- Fin card-Privacidad y personalización -->
+
+    </mat-grid-list>
+
+  </section>
+
+</div>

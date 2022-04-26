@@ -1,0 +1,52 @@
+.bg-dark-green {
+    background-color: #26411E;
+} 
+.bg-light-green {
+    background-color: #39642E;
+}
+.white {
+    color: white;
+}
+.orange {
+    color: #F3753A;
+}
+.decoration-none {
+    text-decoration: none;
+    list-style-type: none;
+}
+.sibagro-text{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.header-search select, input, button {
+    height: 40px;
+    border: none;
+}
+
+.header-search form .search-btn {
+    width: 100px;
+    background: #F3753A;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+}
+
+.margin-left {
+    margin-left: 200px;
+}
+
+a:hover {
+    color: #F3753A;
+}
+
+@media only screen and (max-width: 989px) {
+    .test {
+      margin-left: 16px;
+    }
+}
+
+
+
+
+

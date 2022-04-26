@@ -1,0 +1,116 @@
+<section class="container-infocards fadeIn animated">
+
+  <section class="mid-container">
+
+    <article class="art1">
+      <h2 class="art1-h2">Seguridad</h2>
+    </article>
+
+    <article class="art2">
+      <h3 class="art2-p">Opciones y recomendaciones que te ayudan a proteger tu cuenta</h3>
+    </article>
+
+  </section>
+
+  <mat-grid-list cols="2" rowHeight="500px">
+
+    <!-- Card containers -->
+
+    <!-- card-Privacidad y personalización -->
+    <mat-grid-tile>
+      <mat-card class="dashboard-card custom-height">
+        <mat-card-header>
+          <mat-card-title class="h">
+            <h2>  </h2>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="dashboard-card-content">
+
+          <!-- Container-text for privacity card -->
+          <div class="dash-container shadow-lg">
+            <h2 id="t3">Cuenta</h2>
+            <div class="dash-container-1">
+              <h3 id="dash-h3">Revisión de Segurida y recomendaciones</h3>
+              <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+            </div>
+          </div>
+
+          <div class="dash-container shadow-lg">
+            <h2 id="t3">Actividad Reciente</h2>
+            <div class="dash-container-1">
+              <h3 id="dash-h3">Inicios de sesión y movimientos</h3>
+              <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+            </div>
+          </div>
+
+          <div class="dash-container shadow-lg">
+            <h2 id="t3">Metodos de verificación de identidad</h2>
+            <div class="dash-container-1">
+              <h3 id="dash-h3">Telefono de recuperación y correo de recuperación</h3>
+              <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+            </div>
+          </div>
+
+        </mat-card-content>
+
+      </mat-card>
+
+    </mat-grid-tile>
+    <!-- Fin card-Privacidad y personalización -->
+
+
+    <!-- card-Gestión De Cuenta -->
+    <mat-grid-tile rowHeight="400px">
+      <mat-card class="dashboard-card custom-height">
+        <mat-card-header>
+          <mat-card-title>
+            <h2></h2>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="dashboard-card-content">
+          <!-- Container-text for privacity card -->
+          <div class="dash-container shadow-lg">
+            
+            <h2 id="t3">Tus dispositivos</h2>
+            <div class="dash-container-1">
+              <h3 id="dash-h3">Has iniciado sesión en tu cuenta con los siguientes dispositivos....</h3>
+              <button class="btn-info" mat-raised-button color="primary">Ver detalles</button>
+            </div>
+
+          </div>
+
+          <div class="dash-container-h shadow-lg">
+
+            <h2 id="t3">Terceros con acceso a la cuenta</h2>
+            <div class="dash-container-1">
+              <h3 id="dash-h3">Has concedido permisos a ciertas personas y estos para acceder a algunos datos de tu cuenta de Sibagro, 
+                incluida información sensisble. Retira el acceso a la información a aquellos que ya no esten asociados o ya no confiez.</h3>
+              <button class="btn-info" id="klbtn"  mat-raised-button color="primary">Ver detalles</button>
+            </div>
+
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <!-- Fin card-Privacidad y personalización -->
+
+  </mat-grid-list>
+
+</section>

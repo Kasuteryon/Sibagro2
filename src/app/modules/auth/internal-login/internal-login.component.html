@@ -1,0 +1,64 @@
+<div class="container w-75 my-5 rounded shadow-lg bg-white">
+    <div class="row">
+        
+        <!-- Login image -->
+        <div class="col app__background d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start me-2"></div>
+
+        <div class="col">
+
+            <!-- <div class="text-end">
+                <img src="img/logo.png" alt="sibagro-logo" width="48">
+            </div> -->
+            <h2 class="fw-bold text-center py-3">Bienvenido a SIBAGRO</h2>
+
+            <!-- Login -->
+            <form [formGroup]="form" >
+                <div class="mb-4">
+                    <label class="form-label" for="email">Correo electrónico</label>
+                    <input formControlName="Email" class="form-control" type="email" name="email">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="password">Password</label>
+                    <input formControlName="Password" class="form-control" type="password" name="password">
+                </div>
+                <!-- <div class="mb-4">
+                    <input class="form-check-input" type="checkbox" name="connected">
+                    <label class="form-check-label" for="connected">Mantenerme conectado</label>
+                </div> -->
+
+                <div class="d-grid">
+                    <button class="btn btn-success" (click)="submit()" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Iniciar sesión
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div *ngIf="!validFlag" >
+                    <div class="modal fade animate__animated animate__headShake" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h3 class="modal-title fw-bold" id="exampleModalLabel"> <span class="text-warning">⚠</span> Credenciales Incorrectas</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Por favor asegurarse de que escribió correctamente su correo y contraseña.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col">
+                        <span>No tienes cuenta? <a routerLink="/auth/register">Regístrate</a> </span>
+                    </div>
+                    <div class="col">
+                        <span> <a href="#">Recuperar contraseña</a> </span>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

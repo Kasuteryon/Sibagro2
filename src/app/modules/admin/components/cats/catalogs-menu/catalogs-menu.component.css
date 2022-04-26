@@ -1,0 +1,37 @@
+.grid-container {
+  margin: 20px;
+}
+
+mat-card {
+  border-radius: 10px !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 24px !important;
+}
+
+.dashboard-card {
+  position: absolute;
+  margin-top: 15px;
+  left: 15px;
+  right: 15px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.img{
+    width: 150px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.uil{
+  color: green;
+}

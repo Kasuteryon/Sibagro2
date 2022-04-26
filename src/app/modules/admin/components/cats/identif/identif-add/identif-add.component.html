@@ -1,0 +1,46 @@
+<div class="main-container">
+
+    <div class="appointment-container animated fadeIn">
+        <div class="Wrapper shadow-lg">
+            <div class="title">
+                <label class="h4">Añadir Identificación</label>
+            </div>
+            <form [formGroup]="form">
+                <div class="form">
+
+                    <div class="input_field">
+                        <label>Código de Identificación</label>
+                        <input type="text" class="input" required formControlName="identification_Catalogid">
+                    </div>
+    
+                    <div class="input_field">
+                        <label>Tipo de Identificación</label>
+                        <select class="input" required formControlName="identificationtype_catalogid">
+                            <option *ngFor="let type of idenTypes" [value]="type.identificationtype_catalogid">{{type.identification_Type}}</option>
+                        </select>
+                    </div>
+    
+                    <div class="input_field">
+                        <label>Nombre de Identificación</label>
+                        <input type="text" class="input" required formControlName="identification_Name">
+                    </div>
+                    
+                    <div class="input_field">
+                        <label>Formato de Identificación</label>
+                        <input type="text" class="input" required formControlName="format_Identification">
+                    </div>
+                    
+                    <div class="input_field">
+                        <label>Patrón de Formato</label>
+                        <input type="text" class="input" required formControlName="format_Pattern">
+                    </div>
+    
+                    <div class="mt-4">
+                        <button (click)="submit()" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
